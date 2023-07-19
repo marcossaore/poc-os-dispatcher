@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - Admin</title>
+    <script src="app1.js" type="module" defer></script>
+    <style>
+        #workers {
+            list-style: none;
+        }
+
+        #workers div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #workers li {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 16px;
+            padding: 16px;
+            width: 400px;
+            margin-bottom: 16px;
+            background-color: #e9e4e4;
+        }
+
+        .worker-name {
+            color: rgb(141, 141, 141);
+            margin-bottom: 4px
+        }
+
+        .worker-status {
+            text-align: center;
+            padding: 4px;
+        }
+
+        .no-task {
+            background-color: rgb(50, 128, 50);
+            color: white;
+        }
+
+        .almost-finishing {
+            background-color: rgb(216, 140, 0);
+            color: white;
+        }
+
+        .driving {
+            background-color: rgb(110, 107, 102);
+            color: white;
+        }
+
+        .in-task {
+            background-color: rgb(173, 86, 140);
+            color: white;
+        }
+
+        .btn {
+            width: 140px;
+            padding: 16px;
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .btn-info {
+            background-color: rgb(31, 31, 150);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul id="workers">
+    </ul>
+</body>
+</html>
